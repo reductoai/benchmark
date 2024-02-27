@@ -1,0 +1,7 @@
+*
+!.gitignore
+!images
+!images/benchmark_performance.png
+!benchmarks
+!benchmarks/*
+!README.md
