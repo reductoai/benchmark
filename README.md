@@ -21,7 +21,7 @@ Our process starts with a layout segmenting model to understand where everything
 
 We've tested this approach with really challenging examples and found that it's able to perform in cases where traditional document processing fails (like the table below!). You can test our API outputs with your own docs here.
 
-### Gold in = Gold out
+### Quality in = Quality out
 Bad ingestion leads to low response quality and hallucinations, but we also really think that high quality parsing can meaningfully improve the overall performance of RAG pipelines. We put that to the test by benchmarking overall RAG performance using Reducto's parsing and a few other solutions in the space.
 
 This benchmark uses a scanned 10-K filing and 823 question/answer pairs created by LlamaIndex to evaluate RAG. We initially graded each response using GPT-4, and then followed up with a manual review of each question/answer pair to verify correctness. We also tracked latency when processing the document. In order to make the comparison fair we kept all parts of the RAG pipeline identical across each ingestion method.
